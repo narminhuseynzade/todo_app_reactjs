@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/icon.png">
+</head>
+<body>
+    
+    <main>
+        <section class="header flex">
+            <h1 class="bold">TODO</h1>
+            <button class="theme-btn">
+                <img class="theme-icon" src="./assets/images/icon-moon.svg" aria-label="theme" />
+            </button>
+        </section>
+
+        <form class="user-form flex">
+            <input name="checkbox" id="todo-checkbox" type="checkbox" aria-label="checkbox"/>
+            <input name="text" id="todo-text" type="text" placeholder="Create a new todo…" aria-label="Write what to do"/>
+            <button class="add-btn">
+                <img src="./assets/images/add.png" alt="add" />
+            </button>
+        </form>
+
+        <section class="list flex">
+
+            <div class="filter flex">
+                <h3> <span class="count">0</span> items left</h3>
+
+                <div class="filter-container">
+                    <button class="btn bold all" type="button">All</button>
+                    <button class="btn bold active" type="button">Active</button>
+                    <button class="btn bold completed" type="button">Completed</button>
+                </div>
+
+                <button class="btn clear-completed" type="button">Clear Completed</button>
+
+            </div>
+        </section> 
+
+        <section class="filtr-btns">
+            <button class="btn bold all" type="button">All</button>
+            <button class="btn bold active" type="button">Active</button>
+            <button class="btn bold completed" type="button">Completed</button>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Made by <a class="bold" href="https://github.com/narminhuseynzade">Narmin</a></p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
